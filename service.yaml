@@ -1,17 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata: 
-  name: nodeportsrv
+      name: clusterservice
+      labls: 
+        app: clusterservice 
 spec:
-  type: NodePort  #LoadBalancer #ClusterIp
-  selector: 
-    app: new-app
+  type: ClusterIp
+  selector:
+    app: example-app 
   ports:
     - port: 80
-      targetPort: 80
+      #targetPort: 80
       name: nginx
-      protocol: TCP
-    - port: 8080
-      targetPort: 8080
-      name: tomcat
       protocol: TCP
