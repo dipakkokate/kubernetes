@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata: 
       name: clusterservice
-      labls: 
+      labels: 
         app: clusterservice 
 spec:
   type: ClusterIp
