@@ -5,7 +5,7 @@ metadata:
       labels: 
         app: clusterservice 
 spec:
-  type: ClusterIp
+  type: ClusterIP
   selector:
     app: example-app 
   ports:
