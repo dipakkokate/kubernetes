@@ -18,7 +18,7 @@ spec:
         spec: 
           containers:
              - name: frontendapp
-               image: anupdudhe/frontendrds
+               image: dipakkokate/frontendrds
                ports:
                   - containerPort: 80
                     protocol: TCP
@@ -47,4 +47,4 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 50
+        averageUtilization: 20
